@@ -1,8 +1,12 @@
 # EasyEdit
 ## HTML タグ
-`<script src="https://tgmstudio.github.io/js/easyedit.js"></script>`
+```
+<script src="https://tgmstudio.github.io/js/easyedit.js" defer></script>
+```
 ## URL
-`https://tgmstudio.github.io/js/easyedit.js`
+```
+https://tgmstudio.github.io/js/easyedit.js
+```
 ## JS コード
 ```
 const queryString = location.search;

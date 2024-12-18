@@ -15,7 +15,7 @@ if (maintxt[i].innerHTML === '<ruby>先生<rt>せんせい</rt></ruby>からの<
 document.querySelector('.label').textContent = ('');
 document.querySelector('.discription').textContent = ('EasyEditをご利用いただきありがとうございます。');
 for (let i = 0; i < maintxt.length; i++) {
-if (maintxt[i].innerHTML === '<h3><ruby>自由<rt>じゆう</rt></ruby><ruby>学習<rt>がくしゅう</rt></ruby></h3>') {
+if (maintxt[i].innerHTML === '<ruby>自由<rt>じゆう</rt></ruby><ruby>学習<rt>がくしゅう</rt></ruby>') {
     maintxt[i].innerHTML = (params.get('c'));
 }
 }

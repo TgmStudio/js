@@ -25,7 +25,7 @@ buttona.setAttribute('id','button1');
 document.querySelector('#button1').textContent = (params.get('d'));
 const butlist = document.querySelectorAll('.contents');
 for (let i = 0; i < butlist.length; i++) {
-if (maintxt[i].innerHTML === '<ruby>自分<rt>じぶん</rt></ruby>で<!--?php echo e(); ?--><ruby>選<rt>えら</rt></ruby>ぶ') {
-    maintxt[i].innerHTML = (params.get('e'));
+if (butlist[i].innerHTML === '<ruby>自分<rt>じぶん</rt></ruby>で<!--?php echo e(); ?--><ruby>選<rt>えら</rt></ruby>ぶ') {
+    butlist[i].innerHTML = (params.get('e'));
 }
 }

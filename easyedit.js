@@ -20,5 +20,7 @@ if (maintxt[i].innerHTML === '<ruby>自由<rt>じゆう</rt></ruby><ruby>学習<
     maintxt[i].innerHTML = (params.get('c'));
 }
 }
-document.querySelector('[onclick="pageJumpToQuestion(4, 'MTDAED1214', 'KDZD06048', 6)]').textContent = (params.get('d'));
-document.querySelector('[onclick="pageJump('https://ela.education.ne.jp/students/free');"]').textContent = (params.get('e'));
+const oncla = "onclick=\"pageJumpToQuestion(4, \'MTDAED1214\', \'KDZD06048\', 6)"
+const onclb = "onclick=\"pageJump(\'https://ela.education.ne.jp/students/free\')\;\""
+document.querySelector('[oncla]').textContent = (params.get('d'));
+document.querySelector('[onclb]').textContent = (params.get('e'));

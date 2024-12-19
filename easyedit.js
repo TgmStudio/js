@@ -20,7 +20,12 @@ if (maintxt[i].innerHTML === '<ruby>自由<rt>じゆう</rt></ruby><ruby>学習<
     maintxt[i].innerHTML = (params.get('c'));
 }
 }
-const oncla = "onclick=\"pageJumpToQuestion(4, \'MTDAED1214\', \'KDZD06048\', 6)"
-const onclb = "onclick=\"pageJump(\'https://ela.education.ne.jp/students/free\')\;\""
-document.querySelector('[oncla]').textContent = (params.get('d'));
-document.querySelector('[onclb]').textContent = (params.get('e'));
+const buttona = document.querySelector('.button-fullwidth.nor').lastElementChild;
+buttona.setAttribute('id','button1');
+document.querySelector('#button1').textContent = (params.get('d'));
+const butlist = document.querySelectorAll('.contents');
+for (let i = 0; i < butlist.length; i++) {
+if (maintxt[i].innerHTML === '<ruby>自分<rt>じぶん</rt></ruby>で<!--?php echo e(); ?--><ruby>選<rt>えら</rt></ruby>ぶ') {
+    maintxt[i].innerHTML = (params.get('e'));
+}
+}
